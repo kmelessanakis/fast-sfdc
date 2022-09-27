@@ -8,6 +8,7 @@ import utils from '../utils/utils'
 const diagnosticCollection = vscode.languages.createDiagnosticCollection('FastSfdc-DebugLog')
 
 export default async function executeAnonymous () {
+  console.log('Im a new Addition get ready for log retreiver')
   const editor = vscode.window.activeTextEditor
   if (!editor) return
   const selection = editor.selection
